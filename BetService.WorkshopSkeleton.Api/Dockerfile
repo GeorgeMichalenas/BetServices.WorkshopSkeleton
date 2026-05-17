@@ -1,5 +1,5 @@
-# build from solution foler => docker build -f "BetService.WorkshopSkeleton.Api\Dockerfile" -t workshopSkeleton .
-# docker run -p 8080:8080 workshopSkeleton
+# build from solution foler => docker build -f "BetService.WorkshopSkeleton.Api\Dockerfile" -t workshopskeleton .
+# docker run -p 8080:8080 workshopskeleton
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER $APP_UID
 WORKDIR /app
