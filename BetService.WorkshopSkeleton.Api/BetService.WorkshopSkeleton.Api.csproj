@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>16c0edea-c49d-4581-91df-b84f19e6bc91</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..</DockerfileContext>
+    <RootNamespace>BetService.WorkshopSkeleton.Api</RootNamespace>
+    <AssemblyName>BetService.WorkshopSkeleton.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetService.WorkshopSkeleton.Application\BetService.WorkshopSkeleton.Application.csproj" />
+    <ProjectReference Include="..\BetService.WorkshopSkeleton.Infrastructure\BetService.WorkshopSkeleton.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
